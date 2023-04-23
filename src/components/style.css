@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Delicious+Handrawn&family=Montserrat:wght@300&family=Poppins:ital,wght@0,300;1,200&family=Raleway:wght@200;400&family=Roboto:wght@300&family=Rubik:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Delicious+Handrawn&family=Montserrat:wght@300&family=Poppins:ital,wght@0,300;1,200&family=Raleway:wght@200;400&family=Roboto:wght@300&family=Rubik:ital,wght@1,300&family=Ysabeau:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Bruno+Ace&family=Delicious+Handrawn&family=Montserrat:wght@300&family=Poppins:ital,wght@0,300;1,200&family=Raleway:wght@200;400&family=Roboto:wght@300&family=Rubik:ital,wght@1,300&family=Ysabeau:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #b26e6e;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+.left-content,.right-content{
+    flex-basis: 50%;
+}
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap:2rem;
+}
+.card{
+    width: 300px;
+    background-color:#6d3b3b;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: white;
+}
+.card h2{
+    text-transform: capitalize;
+    font-family: 'Ysabeau', sans-serif ;
+}
+.right-content{
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top:100px;
+    right: 10px;
+}
+.right-content img{
+    margin: 1.5rem;
+    height: 110px;
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  
+}
+.abilities{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.pokename{
+    font-size: 40px;
+    font-family: 'Bruno Ace', cursive;
+    
+}
+.abilities .group{
+    background-color: #7d323b;
+    color: white;
+    padding: 0.5rem;
+    font-size: 7px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+.abilities .group h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Ysabeau', sans-serif ;
+}
+.base-stat{
+    margin-top: 2rem;
+}
+.btn-group{
+    display: flex;
+    position: static;
+    justify-content: center;
+    /* top: 0;
+    right: 0; */
+}
+.btn-group button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #110d15;
+    border-radius: 8px;
+}
+.base-stat h3{
+    font-size: 27px;
+    text-transform: capitalize;
+    font-family: 'Ysabeau', sans-serif ;
+    
+}
+
+
+@media (max-width: 1417px) {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .left-content,
+    .right-content {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      margin-bottom: 20px;
+    }
+  
+    .right-content {
+      top: initial;
+      right: initial;
+      width: 100%;
+      margin-top: 3rem;
+    }
+  
+    .btn-group {
+      position: static;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-group {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        width: 100%;
+        background-color: #b26e6e;
+        margin-bottom: 30px;
+        }
+  
+    .btn-group button {
+      margin: 0.5rem;
+    }
+  
+    .abilities {
+      width: 90%;
+    }
+  
+    .card {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  
+    .pokename {
+      font-size: 30px;
+    }
+  
+    .base-stat h3 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 497px) {
+    .card{
+        margin: auto;
+        width: 80vw;
+    }
+
+    
+  }
+  
